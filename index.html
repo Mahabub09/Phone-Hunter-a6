@@ -16,20 +16,27 @@
 <body>
     <!--=========== header section ============= -->
     <header class="container">
-        <!--============ Navbar=========== -->
+        <!--============ Navbar start=========== -->
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <span class="navbar-brand mb-0 h1 text-success">Phone Mania</span>
             </div>
         </nav>
     </header>
+    <!--============ Navbar end=========== -->
 
-    <main>
+    <main class="container">
         <h1 class="text-center my-3">Find Your Phone On Phone Mania</h1>
         <div class="input-group mb-3 w-50 mx-auto">
-            <input type="text" class="form-control" placeholder="Phone  Name" aria-label="Recipient's username"
-                aria-describedby="button-addon2">
-            <button class="btn btn-success text-white" type="button" id="button-search">Search</button>
+            <input id="search-field" type="text" class="form-control" placeholder="Phone  Name"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchYourPhone()" class="btn btn-success text-white" type="button"
+                id="button-search">Search</button>
+        </div>
+
+        <div id="search-result" class="row row-cols-1 row-cols-md-3  g-4">
+
+        </div>
         </div>
 
 
