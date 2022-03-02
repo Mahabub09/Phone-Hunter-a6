@@ -7,6 +7,8 @@ const searchYourPhone = () => {
     if (searchText == '') {
 
         errorMessage.innerText = "PLease Write Something To Search"
+        const searchResult = document.getElementById('search-result')
+        searchResult.textContent = '';
     }
     else {
 
@@ -24,6 +26,8 @@ const displaySearchResult = data => {
     const errorMessage = document.getElementById('error-message')
     if (data.length === 0) {
         errorMessage.innerText = " Sorry!! No Phone Found"
+        const searchResult = document.getElementById('search-result')
+        searchResult.textContent = '';
 
     }
     else {
